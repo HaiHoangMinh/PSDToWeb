@@ -1,0 +1,90 @@
+.app-footer {
+  background-color: $black;
+  font-size: 12px;
+  line-height: 2;
+  height: 300px;
+  h4 {
+    color: white;
+    font-size: 15px;
+  }
+  p {
+    color: $gray-new;
+    padding-top: 15px;
+    font-size: 14px;
+  }
+  .items {
+    width: 60%;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 auto;
+    .infor-item {
+      margin-top: 65px;
+      height: 280px;
+      width: 30%;
+      &__title {
+        padding-bottom: 15px;
+        border-bottom: 1px solid $gray-dark;
+      }
+      &__social-list {
+        display: flex;
+        flex-flow: row nowrap;
+        li {
+          list-style-type: none;
+        }
+        li a {
+          color: $gray-new;
+          font-size: 15px;
+          padding-right: 30px;
+        }
+      }
+      .item-links {
+        display: flex;
+        flex-flow: row nowrap;
+        li {
+          list-style-type: none;
+        }
+        li a {
+          color: $gray-new;
+          &:hover {
+            color: white;
+            border-bottom: 1px solid white;
+          }
+        }
+        &__nav-2 {
+          margin-left: auto;
+        }
+      }
+    }
+    .infor-item:not(:first-child) {
+      margin-left: 9%;
+    }
+  }
+}
+.footer-end {
+  background-color: $black;
+  border-top: 1px solid $gray-dark;
+  &-items {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 60%;
+    margin: 0 auto;
+    align-items: center;
+    p {
+      color: $gray-new;
+      font-size: 15px;
+    }
+    .payment-items {
+      display: flex;
+      flex-flow: row nowrap;
+      margin-left: auto;
+      margin-right: 50px;
+      li {
+        list-style-type: none;
+      }
+      li a {
+        color: $gray-new;
+        padding-left: 10px;
+      }
+    }
+  }
+}

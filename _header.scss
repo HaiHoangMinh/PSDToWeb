@@ -1,0 +1,68 @@
+.header {
+  width: 100%;
+  .top-bar {
+    background-color: $black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    &-title {
+      color: $gray-dark;
+      margin-left: 20px;
+    }
+    &-links {
+      margin-left: auto;
+      padding-right: 25px;
+      a {
+        line-height: normal;
+        color: $gray-dark;
+        padding-left: 25px;
+      }
+    }
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid $gray-light;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    &-logo {
+      width: 10%;
+      height: 35%;
+    }
+    &-menu {
+      display: flex;
+      flex-flow: row nowrap;
+      white-space: nowrap;
+      align-items: center;
+      width: 43%;
+      margin-left: 16%;
+      font-size: 11px;
+      font-weight: 800;
+      line-height: normal;
+      list-style: none;
+      li:not(:first-child) {
+        padding-left: 7%;
+        a {
+          color: $black;
+          &:hover {
+            color: $violet;
+          }
+        }
+      }
+      &-home {
+        color: $violet;
+      }
+    }
+
+    &-cart {
+      margin-left: auto;
+      a {
+        font-size: 25px;
+        color: $gray-dark;
+        padding-left: 10px;
+      }
+    }
+  }
+}

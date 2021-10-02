@@ -1,0 +1,221 @@
+.banner {
+  display: flex;
+  margin-top: 20px;
+  &-main {
+    width: 67%;
+    position: relative;
+    background: url("image/banner01.jpg") no-repeat;
+    background-size: 100% 100%;
+    &__content {
+      font-size: 18px;
+      line-height: normal;
+      font-family: "Pacifico", cursive;
+      padding: 65% 13% 26% 45%;
+      button {
+        float: right;
+      }
+    }
+  }
+  &-sub {
+    width: 30%;
+    margin-left: 2.6%;
+    line-height: normal;
+    h4 {
+      letter-spacing: 3px;
+      color: $gray-dark;
+      font-size: 13px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    p {
+      font-weight: 900;
+      letter-spacing: 1px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    &-1 {
+      height: 36%;
+      background: url("image/banner02.jpg") no-repeat;
+      background-size: 100% 100%;
+      &__content {
+        padding: 45% 0 0 14%;
+      }
+    }
+    &-2 {
+      margin-top: 10%;
+      height: 59%;
+      background: url("image/banner03.jpg") no-repeat;
+      background-size: 100% 100%;
+      &__content {
+        padding: 45% 0 0 10%;
+        button {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+.feature-items {
+  .main {
+    padding-top: 30px;
+    line-height: 0.1;
+    h6 {
+      color: $violet;
+      letter-spacing: 5px;
+    }
+    h2 {
+      letter-spacing: 2px;
+    }
+    p {
+      color: $violet;
+    }
+  }
+  .main-item {
+    display: flex;
+    flex-flow: row wrap;
+    height: 900px;
+    width: 100%;
+    .item {
+      width: 25%;
+      height: 40%;
+      margin-top: 30px;
+      .checked {
+        color: orange;
+      }
+      .item-image {
+        width: 100%;
+        height: 80%;
+        position: relative;
+        img {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          z-index: -1;
+        }
+        button {
+          position: absolute;
+          margin-top: 250px;
+          margin-left: 3%;
+          z-index: 0;
+        }
+      }
+      &__name {
+        padding-top: 6px;
+        font-size: 13px;
+        font-weight: 800;
+      }
+      &__price {
+        display: flex;
+        font-size: 14px;
+        .old-price {
+          text-decoration-line: line-through;
+        }
+        .new-price {
+          padding-left: 5px;
+          font-weight: 800;
+          color: $violet;
+        }
+      }
+    }
+  }
+}
+.news-events {
+  background-image: url("image/back.jpg");
+  height: 700px;
+  .main {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 0.1;
+    h6 {
+      color: $violet;
+      letter-spacing: 5px;
+    }
+    h2 {
+      letter-spacing: 2px;
+    }
+    p {
+      color: $violet;
+    }
+  }
+  .items {
+    width: 60%;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 auto;
+    .event-item {
+      background-color: white;
+      margin-top: 10px;
+      height: 400px;
+      width: 31%;
+      .item-image {
+        position: relative;
+        img {
+          z-index: -1;
+        }
+        .box {
+          height: 60px;
+          width: 60px;
+          color: white;
+          background-color: $blue-light;
+          display: flex;
+          align-items: center;
+          position: absolute;
+          z-index: 0;
+          margin: 15px 15px;
+          .sub-box {
+            text-align: center;
+            height: 50px;
+            width: 50px;
+            border: 1px solid white;
+            margin-left: 5px;
+          }
+        }
+      }
+      .infor {
+        margin-top: 17px;
+        margin-left: 5%;
+        h4 a {
+          font-weight: 600;
+          color: $black;
+          &:hover {
+            color: $violet;
+          }
+        }
+        p {
+          padding-top: 10px;
+          line-height: 1.5;
+          color: $gray-dark;
+        }
+      }
+      .item-reply {
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+        width: 100%;
+        border-top: 1px solid $gray-light;
+        a {
+          padding: 10px 15px;
+          color: $gray-light;
+        }
+      }
+    }
+    .event-item:not(:first-child) {
+      margin-left: 4%;
+    }
+  }
+
+  .links {
+    text-align: center;
+    margin-top: 60px;
+    a {
+      padding-right: 1%;
+      color: $violet-light;
+      font-size: 12px;
+    }
+    .selected {
+      color: $violet;
+      font-size: 18px;
+    }
+  }
+}

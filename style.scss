@@ -1,0 +1,74 @@
+$violet: #8262b5;
+$violet-light: #b4a7c8;
+$black: #222222;
+$gray-dark: #474747;
+$gray: #585858;
+$gray-new: #828282;
+$gray-light: #dddddd;
+$blue-light: #a1d1dd;
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: white;
+}
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+// Button
+.button {
+  display: inline-block;
+  border: 0;
+
+  color: $gray-dark;
+
+  outline: none;
+  line-height: normal;
+  cursor: pointer;
+  &--primary {
+    color: white;
+    font-size: 16px;
+    padding: 7px 10px;
+    background-color: $violet;
+  }
+  &--default {
+    background-color: white;
+    font-size: 12px;
+    padding: 7px 10px;
+    &:hover {
+      color: $violet;
+    }
+  }
+}
+h4 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+@import "header";
+@import "body";
+@import "footer";
